@@ -1,25 +1,12 @@
+// import { StrictMode } from 'react'
+
 import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
 
-import Header from './components/Header'; // import custom component
-// {} - not needed for default export
-import Body from './components/Body'; 
-import Footer from './components/Footer';
-
-const root = createRoot(document.getElementById('root'));
-
-// console.log(<h1>HEllo<h1/>) --> it just return an object
-
-function MainBody() { // this is custom component - PascalCase
-    return (
-        <>
-            <Header />
-            <Body />
-            <Footer />
-        </>
-    )
-}
-
-root.render(
-    <MainBody />
+createRoot(document.getElementById('root')).
+render(
+    <StrictMode>
+    {/* <App /> */}
+    </StrictMode>,
 )
-
