@@ -1,9 +1,9 @@
 import { createRoot } from 'react-dom/client'
 
-import Header from './Header'; // import custom component
+import Header from './components/Header'; // import custom component
 // {} - not needed for default export
-import Body from './Body'; 
-import Footer from './Footer';
+import Body from './components/Body'; 
+import Footer from './components/Footer';
 
 const root = createRoot(document.getElementById('root'));
 
